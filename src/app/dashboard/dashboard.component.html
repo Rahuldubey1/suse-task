@@ -1,7 +1,7 @@
 <div class="d-flex">
     <div class="sidebar">
-        <a class="active" href="#section1">What is RMT</a>
-        <a href="#section2">RMT Installation and Configuration</a>
+        <a href="#section1" [ngClass]="data ? 'active' : ''" (click)="switch(true)">What is RMT</a>
+        <a href="#section2" [ngClass]="data ? '' : 'active'" (click)="switch(false)">RMT Installation and Configuration</a>
     </div>
 
     <div class="container">

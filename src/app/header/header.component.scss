@@ -4,109 +4,122 @@
     top: 0;
     z-index: 1;
 }
+
 .logo {
     margin-right: 1rem;
     font-size: 1.25rem;
     text-decoration: none;
     padding-left: 35px;
 }
-.collapse-c{
+
+.collapse-c {
     margin-right: 30px;
     a {
-        color: #079044;
+        color: white;
         font-weight: 700 !important;
         font-size: 18px !important;
-        &:hover{
+
+        &:hover {
             color: #079044 !important;
+
             .text-border-blue {
-                width: 68px;
+                width: 35px;
                 height: 2px;
                 background: #079044;
                 margin-top: 0;
                 position: absolute;
                 border-radius: 35px;
             }
-            .home {
-                width: 35px !important; 
+            .product {
+                width: 92px !important;
             }
         }
     }
-    ul{
-        margin-right: 20px;
-    li {
-        span {
-            display: flex;
-        }
-        padding: 0 12px;
-        .active{
-            color: #079044 !important;
-            .text-border-blue {
-                width: 43px;
-                height: 2px;
-                background: #079044;
-                margin-top: 0;
-                position: absolute;
-                border-radius: 35px;
+
+    ul {
+        margin-right: 70px;
+
+        li {
+            margin: 0px 25px;
+            span {
+                display: flex;
             }
-            .home {
-                width: 35px !important; 
+
+            a {
+                text-decoration: none !important;
+                padding-left: 10px !important;
+                padding-right: 10px;
             }
-        }
-        a{
-            text-decoration: none !important;
-            padding-left: 10px !important;
-            padding-right: 10px;
-        .nav-link {
-            display: block;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-        }
         }
     }
-} 
- 
+    .active {
+        color: #079044 !important;
+        .text-border-blue {
+            width: 35px;
+            height: 2px;
+            background: #079044;
+            margin-top: 0;
+            position: absolute;
+            border-radius: 35px;
+        }
+        .product {
+            width: 92px !important;
+        }
+    }
+
 }
 
 
-    @media (max-width: 768px) { 
-        .logo {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 35px;
-        }
+@media (max-width: 768px) {
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        display: flex;
+        flex-wrap: initial;
+    }
+    .navbar-toggler .collapse-cd {
+        box-shadow: none !important;
     }
 
-    @media (max-width: 575px) {
-        .navbar-toggler .collapse-cd {
-            box-shadow: none !important;
-        }
-        .collapse-c {
-            margin-right: 0px !important;
-         ul {
+    .collapse-c {
+        margin-right: 0px !important;
+
+        ul {
             li {
-                a{
+                a {
                     padding: 0px !important;
                 }
+
                 padding: 0px;
                 display: flex;
             }
+
             margin-right: -20px;
-            }
-        }
-        .logo {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 10px;
-        }
-        .collapse-c .login-button {
-            margin-right: 20px !important;
         }
     }
+
+    .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .collapse-c .login-button {
+        margin-right: 20px !important;
+    }
+}
+
 .collapsed {
     box-shadow: 0 0 0 0rem !important;
     border: 2px solid white;
 }
+
 .navbar-toggler {
     border: 2px solid white !important;
 }
