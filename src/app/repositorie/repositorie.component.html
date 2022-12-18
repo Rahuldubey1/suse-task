@@ -1,0 +1,22 @@
+<div class="section-3-about">
+    <div class="container-fluid py-lg-5 py-md-3 py-4">
+        <h1 class="heading py-lg-3 text-center">{{repoList.name}}</h1>
+        <p [innerHTML]="repoList.description" class="des"></p>
+        <h3 class="subHeading py-lg-5 text-center">Product Repositories</h3>
+        <div class="card-box">
+            <div class="card" *ngFor="let data of repoList.repositories; let i = index">
+                <div class="card-number">
+                    <span>{{i+1}}</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-img text-center">
+                        <img src="../../assets/logo.png" alt="logo">
+                    </div>
+                    <h5 class="card-title text-center">{{data?.name}}</h5>
+                    <p class="card-text text-center" [innerHTML]="data?.description"></p>
+                    <p class="card-text text-center"><a href={{data.url}} target="_blank">{{data?.url}}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

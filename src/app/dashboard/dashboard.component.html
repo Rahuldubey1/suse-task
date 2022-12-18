@@ -1,0 +1,96 @@
+<div class="d-flex">
+    <div class="sidebar">
+        <a class="active" href="#section1">What is RMT</a>
+        <a href="#section2">RMT Installation and Configuration</a>
+    </div>
+
+    <div class="container">
+        <div class="term-and-condition">
+            <div id="section1">
+                <h4 class="heading">
+                    Overview about RMT
+                </h4>
+                <br />
+                <ul>
+                    <div>
+                        <p> It's a tool that allows to mirror SUSE products and their repositories in a private
+                            network.Usually SUSE client systems register their products directly with scc.suse.com, but
+                            in
+                            many customer scenarios it's not possible for clients to reach the internet, hence we offer
+                            RMT
+                            as an on-site proxy to be used as registration host and repository mirror.</p>
+                        <p>The Repository Mirroring Tool (RMT) for SUSE Linux Enterprise 15 SP2 allows enterprise
+                            customers
+                            to optimize the management of SUSE Linux Enterprise software updates and subscription
+                            entitlements. It establishes a proxy system for SUSE® Customer Center with repositories and
+                            registration targets. This helps you to centrally manage software updates within a firewall
+                            on a
+                            per-system basis, while maintaining your corporate security policies and regulatory
+                            compliance.
+                        </p>
+                    </div>
+                    <div>
+                        <h6>Repository Mirroring Tool provides functionality that can be useful in many situations,
+                            including
+                            the following:</h6>
+                        <ul>
+                            <li>You want to update SUSE Linux Enterprise servers.</li>
+                            <li>Not all machines in your environment can be connected to SUSE Customer Center to
+                                register
+                                and retrieve updates for bandwidth or security reasons.</li>
+                            <li>There are SUSE Linux Enterprise hosts that are restricted and difficult to update
+                                without
+                                putting in place a custom update management solution.</li>
+                            <li>You need to integrate additional external or internal repositories.</li>
+                        </ul>
+                    </div>
+                    <div class="image mt-3">
+                        <img src="../../assets/graph.png" alt="graph">
+                    </div>
+                    <br />
+                </ul>
+            </div>
+            <div id="section2">
+                <h4 class="heading">
+                    RMT Installation and Configuration
+                </h4>
+                <br />
+                <ul>
+                    <div>
+                        <p>RMT is included in SUSE Linux Enterprise Server starting with version 15.</p>
+                        <ul>
+                            <li>Install RMT directly during the installation of SUSE Linux Enterprise Server.</li>
+                            <li>Install it on a running system. After the packages are installed.</li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div>
+                        1. Installation During System Installation
+                        <br />
+                        <br />
+                        <ul>
+                            <p>To install it during installation, select the rmt-server package. The package selection
+                                is available in the Installation Settings step of the installation when selecting
+                                Software.</p>
+                            <p>
+                                We recommend to check for available RMT updates immediately after installing SUSE Linux
+                                Enterprise Server using the zypper patch command. SUSE continuously releases maintenance
+                                updates for RMT, and newer packages are likely to be available.
+                            </p>
+                        </ul>
+                    </div>
+                    <div>
+                        2.  Installation on an existing system
+                        <br />
+                        <br />
+                        <ul>
+                            <p>To install RMT on a running SUSE Linux Enterprise Server installation, use zypper:<p>
+                            <p><strong>> sudo zypper in rmt-server</strong></p>
+                            
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
