@@ -5,8 +5,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RepositorieComponent } from './repositorie/repositorie.component';
 
 const routes: Routes = [
-  { path: '', component:  ProductsComponent },
-  // { path: 'products', component:  ProductsComponent},
+  { path: '', component:  DashboardComponent },
+  { path: 'products', component:  ProductsComponent},
   { path: 'repositorie/:id', component:  RepositorieComponent},
 ];
 
