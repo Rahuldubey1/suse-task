@@ -1,4 +1,4 @@
-.section-3-about {
+.section {
     .heading {
         color: #0c322c;
         font-size: 44px;
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 426px) {
-    .section-3-about {
+    .section {
         padding: 20px;
 
         .subHeading {
@@ -112,7 +112,7 @@
 }
 
 @media (max-width: 376px) {
-    .section-3-about {
+    .section {
         padding: 20px;
 
         .subHeading {
@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 320px) {
-    .section-3-about {
+    .section {
         padding: 20px;
 
         .subHeading {
